@@ -1,50 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
     <title>Facebook MockUP</title>
 
-    <link rel="stylesheet" href="style.css">
- 
-
-  
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-
 <body>
-    <nav>    </nav>
-    <div class="header"> 
-        <div class="header-bg"> 
-            <div class="profile-photo">  </div>
+    <nav>       
+        <!-- The form -->
+        <form class="search-form" action="action_page.php">
+            <button>f</button> 
+            <input type="text" placeholder="Search" name="search">  
+            <button type="submit"><i class="Search-button">🔍</i></button>
+                <span class="nav-buttons">         
+                    <button>User-Name</button>
+                    <button>🏠</button>
+                    <button>Create</button>
+                    <button>👽</button>
+                    <button>📧</button>
+                    <button>❕</button>
+                    <button>Help</button>
+                    <button>⏷</button>     
+                </span>
+        </form>       
+    </nav>
+
+    <div class="header">
+        <div class="Update-cover-photo-window">
+            <button> 📷 Update Cover Photo</button>  
         </div>
-        <div class="profile-header"></div>
-      
-        <div class="profile-info"></div>
-        <div class="profile-buttons"> 
-            <button>Add profile section</button>
-            <button>More...</button>
-            <button>✎</button>
+
+        <div class="profile-photo"> 
+            <button> 📷 Update </button>  
+            <h1> <span>DeAndre Christopher Owens</span></h1>  
+        </div>   
         
-        </div>
         <div class="youll-float-too">
-            <div class="profile-buttons"> 
-                <button>Add profile section</button>
-                <button>More...</button>
-                <button>✎</button>
-            
-            </div>    
-            <div class="employer-and-school-badges">
-                <ul>
-                    <li> 🏢 Job </li>
-                    <li> 🏫 School </li>
-                    <li></li>
-                </ul>
-            </div>
-                
+            <div class="Top-profile-buttons"> 
+                <button>Edit Profile </button>
+                <button>Activity Log</button>
+                <button>...</button>              
+            </div>           
         </div>
-      
-            <h1> DeAndre Christopher Owens</h1>
-    </div>    
-   
+    </div>
+
+    <div class="profile-header"> 
+        <div class="Bottom-profile-buttons"> 
+           <button>Timeline ⏷</button> 
+           <button>About</button>
+           <button>Friends</button>
+           <button>Photos</button>
+           <button>🔒 Archive</button>
+           <button>More ⏷ </button>
+        </div>  
+    </div>
+    
+    <div class="two-column-layout">    
+            
+              <!--Left Column -->
+            <div class="profile-info"> 
+                <div class="user-bio">
+                    <h2>Intro</h2>
+                    <button>Edit Bio</button>
+                    <ul>
+                        <li>🏢 Job</li>
+                        <li>🏫 College</li>
+                        <li>High School</li>
+                        <li>Currently lives</li>
+                        <li>Hometown is</li>
+                        <li>Marital Status</li>
+                        <li>Joined September 2011</li>
+                    </ul>
+                    <button>Edit Details</button>
+                    <div class="row">
+
+                            <div class="column">
+                                <div id="pic1"> 1 </div>
+                            <!--  <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
+                                </div>
+
+                            <div class="column"> 
+                                <div id="pic2"> 2  </div>
+                            <!--  <img src="img_forest.jpg" alt="Forest" style="width:100%"> -->
+                            </div>
+
+                    </div>
+
+                    <!--</div> --> 
+
+                    <div class="row"> 
+                            <div class="column"> <div id="pic1"> 3 </div>
+                            <!--  <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
+                            </div>
+
+                            <div class="column"> <div id="pic2"> 4 </div>
+                            <!--  <img src="img_forest.jpg" alt="Forest" style="width:100%"> -->
+                            </div>
+                    </div>
+                    <button>Edit Featured</button>
+                </div>        
+            </div>        
+            <!--Right Column -->
+            <div class="Timeline-column">               
+                <div class="Create-timeline-options, youll-float-too">
+                    <div class="Top-create-timeline-post-buttons">
+                            <button>Create Post</button> 
+                            <button>Photo/Video</button>
+                            <button>Live Video</button>
+                            <button>Life Event</button>
+                    </div>           
+                        <div class="Bottom-create-timeline-post-buttons"> 
+                                <button>Photo/Video</button>
+                                <button>Tag Friends</button>
+                                <button>Play with Friends</button> 
+                                <button>...</button>
+                        </div> 
+                </div>
+
+            <!--Right Column -->
+            <!--Exists between Create Timeline and Timeline posts-->  
+                <div class="Edit-timeline-buttons, youll-float-too">
+                        <button>Manage Posts</button>
+                        <button>List View</button>
+                        <button>Grid View</button>
+                </div>   
+            <!--Right Column -->
+                <div class="Timeline-posts">
+                    <div class="Bottom-timeline-interact-buttons">
+                        <button>Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>       
+                    </div>           
+                </div>
+            </div>
+    </div>
 </body>
 </html>
