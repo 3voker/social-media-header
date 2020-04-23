@@ -93,8 +93,7 @@ and centered within the full width of the screen.*/
     left: 1px;
 }
 /*.profile-photo
-{
-    
+{   
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -156,21 +155,25 @@ button:hover{background-color: whitesmoke; transition-duration: .2s; }
 /*Two-column-layout will be the container for both the left and right columns*/   
 .two-column-layout
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 850px; 
-    height: 150px; 
-    background-color: none; 
+    height: 700px; 
+    background-color: gray; 
     position: center; 
-    border: 0px, solid black; 
+    border: 2px, solid black; 
     margin: auto;
 }
 
 /* The left column should be 328 pixels wide (including borders) */
 
-.profile-info
+.profile-info-column
 {
+  
    background: white;
    border: 1px dotted grey; 
-   height: 60px;
+   height: 500px;
    width: 327px; 
    position: left;
    margin-left: 0px;
@@ -181,6 +184,7 @@ button:hover{background-color: whitesmoke; transition-duration: .2s; }
 
 .user-bio
 { 
+    flex-direction: row;
     background-color: white;
         
         border: 1px dotted black;   
@@ -206,50 +210,63 @@ button:hover{background-color: whitesmoke; transition-duration: .2s; }
   
   .column 
   {
-    flex: 50%;
+    flex: 20%;
     padding: 5px;
-  }
+  } 
 
   .Timeline-column
-  { 
+  {   
     width: 511px; 
-    position: relative;
-    margin-right: 0px; 
-    padding-left: 5px;
+    border: 4px, line, black;
+    height: 600px;
+    margin: auto;  
   }
 
 /*the right column should be 512 pixels wide (including borders),*/
 .Create-timeline-options
-{
-    border-style: line;
-    border: 1px; 
-    border-color: black; 
-    width: 511px; 
-    margin-right: 0px; 
+{     
+    color: lightgray;
+    border: 1px, line, black;
+    width: 450px; 
+    height: 200px;
+    margin: auto;
 }
-
+.Edit-timeline-options{  
+    
+    color: lightgray;
+    border: 1px, line, black;
+    width: 450px; 
+    height: 200px;
+    margin: auto;
+}
 .Edit-timeline-buttons
-{
-    width: 511px; 
-    position: right;
-    margin-right: 0px; 
-    padding-left: 5px;
+{    
+    border: 1px, line, black;
 }
-
 .Timeline-posts
-{ 
-    border: 1px;
-    border-style: line;
-    border-color: black; 
-    width: 511px; 
-    height: 100px;
-    position: right;
-    margin-right: 0px; 
-    padding-left: 5px;
+{  
+    color: lightgray;
+    border: 1px, line, black;
+    width: 450px; 
+    height: 200px;
+    margin: auto;
+}
+.random-post{  
+    color: lightgray;
+     border: 5px, line, black;
+    width: 450px; 
+    height: 200px;
+    margin: auto;
+   
 }
 
 span{border: black; width: 50px; top: -20px;}
 
-.Bottom-timeline-interact-buttons{width: 511px; position: right;}
+.content{height: 200px; width: 400px; margin: 5; color: white;}
 
-.youll-float-too{/* border: 1px dotted black; */ width: 45%; top: 30px; float:right;}
+.Top-create-timeline-post-buttons{border: 1px, line, black; 
+}
+
+.Bottom-timeline-interact-buttons{border: 1px, line, black;}
+
+.youll-float-too{width: 45%; top: 30px; float:right;}
